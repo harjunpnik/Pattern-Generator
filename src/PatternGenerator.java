@@ -9,6 +9,10 @@ public class PatternGenerator {
 		//Function for the input data validation
 		int [] referenceArray = functions.dataValidateReferencepattern();
 		
+		System.out.println("");
+		
+		int[][]matrixArray = functions.matrixGenerator(referenceArray);
+		
 		System.out.println("Done");
 		
 		
