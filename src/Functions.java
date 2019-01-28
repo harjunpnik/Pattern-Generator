@@ -152,4 +152,18 @@ public class Functions {
 		
 	}
 	
+	//This method converts all the ones to 255 so that when it is in rgb form we get white
+	public int[][] rbgMatrixConverter(int[][] matrix){
+		int[][] rgbMatrix = matrix;
+		
+		for (int i = 1; i < rgbMatrix.length; i++) {
+			for (int j = 0; j < rgbMatrix[i].length; j++) {
+				if(rgbMatrix[i][j] == 1) rgbMatrix[i][j] = 255;
+			}
+		}
+		
+		return rgbMatrix;
+	}
+	
+	
 }
